@@ -14,12 +14,12 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Cài đặt sẵn các thư viện Python thường dùng cho mô hình ML/AI (pandas, numpy, scikit-learn, joblib)
-RUN pip3 install --no-cache-dir numpy pandas scikit-learn joblib
+# Cài đặt sẵn các thư viện Python cho mô hình ML/AI (vượt rào PEP 668 cho Ubuntu/Debian mới)
+RUN pip3 install --no-cache-dir --break-system-packages numpy pandas scikit-learn joblib
 
 WORKDIR /app
 
-# Sao chép file WAR và thư mục chứa mô hình AI
+# Sao chép file WAR và thư mục chứa mô hình AI từ giai đoạn build
 COPY --from=build /app/target/*.war app.war
 COPY --from=build /app/ml_models /app/ml_models
 
