@@ -26,4 +26,5 @@ COPY --from=build /app/ml_models /app/ml_models
 ENV PORT=8080
 EXPOSE 8080
 
-ENTRYPOINT ["java", "-Dserver.address=0.0.0.0", "-jar", "app.war"]
+# Chạy dưới dạng shell form để Tomcat nhận chính xác biến môi trường PORT từ Render và tối ưu SecureRandom
+ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom -Dserver.port=${PORT} -Dserver.address=0.0.0.0 -jar app.war
