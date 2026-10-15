@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y \
     python3-dev \
     && rm -rf /var/lib/apt/lists/*
 
-# Cài đặt sẵn các thư viện Python cho mô hình ML/AI (vượt rào PEP 668 cho Ubuntu/Debian mới)
+# Cài đặt sẵn các thư viện Python cho mô hình ML/AI
 RUN pip3 install --no-cache-dir --break-system-packages numpy pandas scikit-learn joblib
 
 WORKDIR /app
@@ -23,8 +23,9 @@ WORKDIR /app
 COPY --from=build /app/target/*.war app.war
 COPY --from=build /app/ml_models /app/ml_models
 
-ENV PORT=8080
-EXPOSE 8080
+# Đặt mặc định port là 10000 (chuẩn của Render)
+ENV PORT=10000
+EXPOSE 10000
 
-# Chạy dưới dạng shell form để Tomcat nhận chính xác biến môi trường PORT từ Render và tối ưu SecureRandom
-ENTRYPOINT java -Djava.security.egd=file:/dev/./urandom -Dserver.port=${PORT} -Dserver.address=0.0.0.0 -jar app.war
+# Sử dụng exec form để truyền biến môi trường chuẩn xác
+ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dserver.address=0.0.0.0", "-jar", "app.war"]
