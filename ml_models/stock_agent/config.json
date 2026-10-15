@@ -1,0 +1,16 @@
+{
+  "ticker": "AMZN",
+  "target": "next_log_return",
+  "window": 30,
+  "split": "time_ordered_70_10_20",
+  "features": [
+    "log_return",
+    "range_ratio",
+    "log_volume_change",
+    "ma5_ratio",
+    "ma20_ratio",
+    "volatility10",
+    "rsi14"
+  ],
+  "note": "This scaffold writes baseline metrics; add a real LSTM/GRU stack for final training."
+}

@@ -1,0 +1,65 @@
+[
+  {
+    "id": "amzn-2019-10k-business",
+    "source": "AMZN_2019_10K_SAMPLE_REPLACE.txt",
+    "doc_type": "10-K",
+    "date": "2020-01-31",
+    "page": 3,
+    "section": "Business overview",
+    "text": "TAI LIEU MAU, CAN THAY. Amazon operates through online retail, third-party seller services, subscription services, advertising, and AWS. This sample states only qualitative structure and does not include invented revenue numbers."
+  },
+  {
+    "id": "amzn-2019-10k-risk",
+    "source": "AMZN_2019_10K_SAMPLE_REPLACE.txt",
+    "doc_type": "10-K",
+    "date": "2020-01-31",
+    "page": 12,
+    "section": "Risk factors",
+    "text": "TAI LIEU MAU, CAN THAY. Amazon notes that competition, execution risk, macroeconomic conditions, technology infrastructure, and regulatory developments may affect future performance. No investment recommendation is provided."
+  },
+  {
+    "id": "amzn-2020-q1-aws",
+    "source": "AMZN_2020_Q1_SAMPLE_REPLACE.txt",
+    "doc_type": "10-Q",
+    "date": "2020-04-30",
+    "page": 7,
+    "section": "AWS discussion",
+    "text": "TAI LIEU MAU, CAN THAY. AWS is described qualitatively as a cloud segment that can contribute to operating income. The sample is only a placeholder until official 10-Q text is added."
+  },
+  {
+    "id": "amzn-2020-q2-pandemic",
+    "source": "AMZN_2020_Q2_SAMPLE_REPLACE.txt",
+    "doc_type": "10-Q",
+    "date": "2020-07-30",
+    "page": 9,
+    "section": "COVID-19 impact",
+    "text": "TAI LIEU MAU, CAN THAY. During 2020, e-commerce demand and operational constraints were important qualitative factors for Amazon. Replace this placeholder with official filing or news content for exact wording."
+  },
+  {
+    "id": "amzn-2020-q2-cloud",
+    "source": "AMZN_2020_Q2_SAMPLE_REPLACE.txt",
+    "doc_type": "10-Q",
+    "date": "2020-07-30",
+    "page": 11,
+    "section": "Cloud competition",
+    "text": "TAI LIEU MAU, CAN THAY. AWS competes with large cloud providers such as Microsoft Azure and Google Cloud. Competitive pressure can affect growth expectations and investor interpretation."
+  },
+  {
+    "id": "macro-rates-2020",
+    "source": "MACRO_2020_SAMPLE_REPLACE.txt",
+    "doc_type": "news",
+    "date": "2020-09-15",
+    "page": 1,
+    "section": "Rates and growth stocks",
+    "text": "TAI LIEU MAU, CAN THAY. Interest rates can affect valuation assumptions for growth stocks. This placeholder explains the mechanism only and should be replaced by dated source material."
+  },
+  {
+    "id": "future-news-blocked",
+    "source": "FUTURE_SAMPLE_SHOULD_NOT_APPEAR.txt",
+    "doc_type": "news",
+    "date": "2021-02-01",
+    "page": 1,
+    "section": "Future data",
+    "text": "TAI LIEU MAU, CAN THAY. This chunk is dated after 2020-09-23 and should be filtered out by the RAG tool when AS_OF_DATE is 2020-09-23."
+  }
+]

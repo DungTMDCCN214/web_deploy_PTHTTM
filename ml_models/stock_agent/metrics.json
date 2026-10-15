@@ -1,0 +1,26 @@
+{
+  "as_of_date": "2020-09-23",
+  "models": {
+    "lstm_demo": {
+      "rmse": 33.15,
+      "mae": 20.32,
+      "mape": 1.29,
+      "directional_accuracy": 0.526,
+      "note": "Scaffold only: replace with trained LSTM metrics after adding TensorFlow/PyTorch."
+    },
+    "gru_demo": {
+      "rmse": 33.15,
+      "mae": 20.32,
+      "mape": 1.29,
+      "directional_accuracy": 0.526,
+      "note": "Scaffold only: replace with trained GRU metrics after adding TensorFlow/PyTorch."
+    },
+    "naive_persistence": {
+      "rmse": 33.15,
+      "mae": 20.32,
+      "mape": 1.29,
+      "directional_accuracy": 0.526,
+      "note": "Computed by train_model.py: next price equals previous close."
+    }
+  }
+}

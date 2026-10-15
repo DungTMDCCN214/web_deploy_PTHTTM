@@ -1,0 +1,62 @@
+[
+  {
+    "id": "dx-thresholds",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 1,
+    "text": "Glucose mau cao co the goi y roi loan chuyen hoa duong. Trong demo nay, glucose tu 140 den 199 mg/dL duoc xem la dau hieu can chu y, con tu 200 mg/dL tro len la muc rat cao va nen duoc danh gia boi nhan vien y te."
+  },
+  {
+    "id": "nutrition",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 2,
+    "text": "Che do an can uu tien rau, ngu coc nguyen hat, dam nac va han che do uong co duong. Viec chia nho khau phan carbohydrate giup on dinh duong huyet hon trong sinh hoat hang ngay."
+  },
+  {
+    "id": "bmi-weight",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 3,
+    "text": "BMI tu 25 den 29.9 thuong duoc xem la thua can, tu 30 tro len la beo phi. Thua can va beo phi co lien quan den khang insulin, lam tang nguy co dai thao duong type 2."
+  },
+  {
+    "id": "exercise",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 4,
+    "text": "Van dong deu dan, chang han di bo nhanh hoac tap suc ben phu hop, co the cai thien do nhay insulin va ho tro kiem soat can nang. Nen bat dau tu muc vua suc va duy tri deu."
+  },
+  {
+    "id": "blood-pressure",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 5,
+    "text": "Huyet ap cao thuong di kem nguy co tim mach va co the xuat hien cung cac roi loan chuyen hoa. Khi huyet ap tam truong tu 90 mmHg tro len, nguoi benh nen theo doi va tu van y te."
+  },
+  {
+    "id": "screening",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 6,
+    "text": "Tuoi tu 45 tro len, tien su gia dinh hoac nhieu yeu to nguy co la ly do nen sang loc duong huyet dinh ky. Sang loc giup phat hien som tien dai thao duong va dai thao duong type 2."
+  },
+  {
+    "id": "insulin-resistance",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 7,
+    "text": "Khang insulin la tinh trang co the can nhieu insulin hon de kiem soat duong huyet. Beo phi, it van dong va yeu to di truyen co the lam tang kha nang khang insulin."
+  },
+  {
+    "id": "pregnancy",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 8,
+    "text": "So lan mang thai cao va tien su dai thao duong thai ky co the lien quan den nguy co roi loan duong huyet ve sau. Cac chi so nay can duoc hieu trong boi canh suc khoe tong the."
+  },
+  {
+    "id": "complications",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 9,
+    "text": "Duong huyet cao keo dai co the gay bien chung tren tim mach, than, than kinh va mat. Kiem soat som cac yeu to nguy co giup giam kha nang bien chung lau dai."
+  },
+  {
+    "id": "when-to-see-doctor",
+    "source": "diabetes_demo_guidance.txt",
+    "page": 10,
+    "text": "Neu co duong huyet cao, trieu chung bat thuong, nguy co cao hoac ket qua demo dang lo ngai, nguoi dung nen gap bac si de duoc lam xet nghiem chinh thuc nhu glucose luc doi hoac HbA1c."
+  }
+]

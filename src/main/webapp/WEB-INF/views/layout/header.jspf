@@ -1,0 +1,19 @@
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
+<%@ taglib prefix="c" uri="jakarta.tags.core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>${empty pageTitle ? 'AI & Deep Learning Studio' : pageTitle}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700;800&display=swap">
+  <link rel="stylesheet" href="${ctx}/css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="${ctx}/">AI &amp; Deep Learning Studio</a>
+  <span class="course">Phát triển hệ thống thông minh · PTIT</span>
+</header>
+<main class="wrap">

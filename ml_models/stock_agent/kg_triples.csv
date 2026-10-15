@@ -1,0 +1,16 @@
+subject,relation,object
+Amazon,operates_segment,AWS
+Amazon,operates_segment,E_Commerce
+Amazon,operates_segment,Advertising
+AWS,generates,Cloud_Revenue
+Cloud_Revenue,drives,Operating_Income
+E_Commerce,generates,Retail_Revenue
+Operating_Income,influences,Stock_Price
+Retail_Revenue,influences,Stock_Price
+Microsoft_Azure,competes_with,AWS
+Google_Cloud,competes_with,AWS
+Federal_Reserve,controls,Interest_Rate
+Interest_Rate,impacts,Gold_Price
+Interest_Rate,impacts,Growth_Stock_Valuation
+Growth_Stock_Valuation,influences,Stock_Price
+COVID19,impacts,E_Commerce
