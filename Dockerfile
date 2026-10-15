@@ -23,9 +23,8 @@ WORKDIR /app
 COPY --from=build /app/target/*.war app.war
 COPY --from=build /app/ml_models /app/ml_models
 
-# Đặt mặc định port là 10000 (chuẩn của Render)
 ENV PORT=10000
 EXPOSE 10000
 
-# Sử dụng exec form để truyền biến môi trường chuẩn xác
-ENTRYPOINT ["java", "-Djava.security.egd=file:/dev/./urandom", "-Dserver.address=0.0.0.0", "-jar", "app.war"]
+# Sử dụng lệnh chuẩn truyền thẳng biến PORT vào JVM arguments
+ENTRYPOINT ["java", "-Dserver.port=${PORT}", "-Dserver.address=0.0.0.0", "-jar", "app.war"]
