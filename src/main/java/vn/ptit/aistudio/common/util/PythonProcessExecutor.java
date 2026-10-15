@@ -15,6 +15,19 @@ public class PythonProcessExecutor {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
+    /**
+     * Linux/Docker (Debian/Ubuntu) chỉ có lệnh "python3", không có "python".
+     * Windows thường dùng "python". Có thể ép bằng biến môi trường PYTHON_CMD.
+     */
+    private static String resolvePythonCommand() {
+        String env = System.getenv("PYTHON_CMD");
+        if (env != null && !env.isBlank()) {
+            return env.trim();
+        }
+        boolean windows = System.getProperty("os.name", "").toLowerCase().contains("win");
+        return windows ? "python" : "python3";
+    }
+
     public <T> T execute(String scriptPath, Object requestInput, Class<T> responseType) {
         try {
             // 1. Chuyển DTO request thành chuỗi JSON
@@ -27,7 +40,7 @@ public class PythonProcessExecutor {
             }
 
             // 3. Khởi tạo ProcessBuilder
-            ProcessBuilder pb = new ProcessBuilder("python", scriptFile.getAbsolutePath());
+            ProcessBuilder pb = new ProcessBuilder(resolvePythonCommand(), scriptFile.getAbsolutePath());
             pb.environment().put("PYTHONIOENCODING", "utf-8");
             pb.redirectErrorStream(true); // Gộp stderr vào stdout
 
